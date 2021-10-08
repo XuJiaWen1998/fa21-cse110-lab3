@@ -1,0 +1,154 @@
+/* style for html*/
+@media print{
+    body {font-size: 10px;}
+}
+@media screen{
+    body {font-size: 16px}
+}
+@media screen, print{
+    body {line-height: 1.5;}
+}
+.class1.class2{
+    color: indigo;
+}
+h1 + h2 { color:blueviolet; }
+h3 ~ i { color: rgb(21, 12, 100); }
+li > div{ color: brown;}
+header{
+    border: 5px solid rebeccapurple;
+    margin-bottom:2ex;
+    margin-left:1em;
+    margin-right:1vw;
+    text-align:center;
+}
+.form{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-auto-flow: row;
+}
+details{
+    display: grid;
+}
+body{
+    background-color:rgb(233, 238, 221);
+    margin-top:1em;
+}
+a[href^="#"] {
+    font-family:'Titillium Web', sans-serif;
+}
+form{
+    display: inline-block;
+    background-color: darkgray;
+    border:1mm solid black;
+    width: 1000px;
+}
+li, p, option, label, legend{
+    font-family: 'Titillium Web', sans-serif;
+}
+  
+li li {
+    list-style-type: circle;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    flex-basis: auto;
+}
+.menu{
+    padding-left: 1ch;
+    padding-right: 1ch;
+    padding-top: 1ch;
+    padding-bottom: 1ch;
+    border: 0.5mm solid blue;
+}
+h1{
+    color: rgb(162, 0, 255);
+}
+h2, h3{
+    color: royalblue;
+    text-decoration: underline;
+}
+video{
+    position: relative;
+    left: 200px;
+    height: 150px;
+}
+audio{
+    position: relative;
+    left: 150px;
+    height: 100px;
+}
+.form{
+    position: static;
+}
+.attendance{
+    margin: 1% auto;
+    background-color: #a0d45b;
+    border: 0.5mm solid rebeccapurple;
+    padding: 1em 3px 30px 5px;
+    max-width: 500px;
+    min-width: 150px;
+    
+}
+.agenda{
+    margin: 1% auto;
+    background-color: lightgoldenrodyellow;    
+    border-width: 0.5mm;
+    border-style: solid;
+    border-color: rebeccapurple;
+    padding: 1em 3px 30px 5px;
+    display: block;
+    max-width: 300px;
+    min-width: 150px;
+}
+.New{
+    background-color: rgb(151, 153, 51);
+    height: 200px;
+    width: 250px;
+}
+.Unfinished{
+    background-color: hsl(140, 34%, 50%);
+    height: 200px;
+    width: 250px;
+}
+*.Questions{
+    margin: 10px 50px 20px 0;
+    background-color: lightgoldenrodyellow; 
+    height: 200px;
+    width: 250px;
+}
+#attendance{
+    text-decoration: underline;
+}
+#agenda{
+    text-decoration: underline;
+}
+#guidance{
+    border-radius: 0.1in;
+    border-style: solid;
+    border-color: rebeccapurple;
+}
+*#New{
+    text-decoration: underline;
+}
+#Unifnished{
+    text-decoration: underline;
+}
+#comments{
+    text-decoration: underline;
+}
+button:hover{
+    background-color: royalblue;
+    color:white;
+}
+a:hover{
+    background-color: rosybrown;
+    color: white;
+}
+button:active{
+    background-color: paleturquoise;
+}
+
+
