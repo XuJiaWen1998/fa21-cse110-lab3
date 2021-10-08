@@ -4,7 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Final Fantasy XIV Group Meeting Week1</title>
-        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Titillium+Web&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -18,9 +21,9 @@
                 <li><a href="#attendance">Attendance</a></li>
                 <li><a href="#agenda">Agenda</a></li>
                 <li><a href="#guidance">Guidance of FFXIV</a></li>
-                <li><a href="#Unifnished">Unfinished Business</a></li>
-                <li><a href="#New">New Business</a></li>
-                <li><a href="#comments">Comments & Questions</a></li>
+                <li><a href="#questionaire">Questionaire</a></li>
+                <li><a href="#video">Video and Audio</a></li>
+                <li><a href="#summary">Summary</a></li>
             </ol>
         </nav>
 
@@ -43,27 +46,32 @@
                 <div class="agenda">
                     <h3 id="agenda">Agenda:</h3>
                     <ol>
-                        <li>Go over basic guidance of FFXIV</li>
-                        <li>New Dungeon Challenging</li>
-                        <li>Distribution of team role(tank/dps/healer)</li>
-                        <li>Update of new weapon/armor production</li>
-                        <li>Talk about new characters' background</li>
-                        <li>Discuss skills combination</li>
+                        <li>
+                            <div>Discussion</div>
+                            <ol>
+                                <li>Go over basic guidance of FFXIV</li>
+                                <li>New Dungeon Challenging</li>
+                                <li>Talk about new characters' background</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <div>Jobs Distribution and Strategies</div>
+                            <ol>
+                                <li>Distribution of team role(tank/dps/healer)</li>
+                                <li>Update of new weapon/armor production</li>
+                                <li>Discuss skills combination</li>
+                            </ol>
+                        </li>
                     </ol>
                 </div>
             </section>
             <hr>
-
-            <section>
-                <h3 id="guidance">Guidance of FFXIV</h3>
-                <img src="image.png" alt="Picture" width="1000">
-            </section>
             <hr>
             <section>
                 <div class="Unfinished">
                     <h3 id="Unifnished">Unfinished business from last meeting:</h3>
                     <ul>
-                        <li>Healper options for the Team - <em>White Mage/Scholar/Astrologian</em></li>
+                        <li>Healer options for the Team - <em>White Mage/Scholar/Astrologian</em></li>
                         <li>Tank's duty in the current dungeon</li>
                     </ul>
                 </div>
@@ -92,9 +100,12 @@
                 </div>
             </section>
         </main>
-       
+        <section>
+            <h3 id="guidance">Guidance of FFXIV</h3>
+            <img src="image.png" alt="Picture" width="1000">
+        </section>
         <hr>
-        <h3>Extra: Questionaire about FFXIV</h3>
+        <h3 id = "questionaire">Extra: Questionaire about FFXIV</h3>
         <form action="/data" method="get" class="form">
             <div class="form">
                 <label for="name">Enter your name: </label>
@@ -126,7 +137,7 @@
                   
                 <div>
                     <input type="radio" id="Tank" name="role" value="Tank">
-                    <label for="Tank">Tank</label>
+                    <label for="Tank">Tank </label>
                 </div>
                 <button class="A button" type="button">Confirm</button>
             </fieldset>
@@ -145,14 +156,14 @@
                   
                 <div>
                     <input type="checkbox" id="Tank2" name="role" value="Tank2">
-                    <label for="Tank2">Tank</label>
+                    <label for="Tank2">Tank </label>
                 </div>
                 <button class="A button" type="button">Confirm</button>
 
                 
             </fieldset>
             <fieldset>
-                <label for="job-select">Choose a job you like the most</label>
+                <label for="job-select">Choose a job you like the most </label>
                 <select name="jobs" id="job-select">
                     <option value=" ">Please choose a job</option>
                     <option value="Paladin">Paladin</option>
@@ -177,7 +188,7 @@
             </fieldset>
 
             <fieldset>
-                <label for="hours">How many hours do you play a week?</label>
+                <label for="hours">How many hours do you play a week? </label>
                 <datalist id="hours-played">
                     <option value="30 mins">
                     <option value="1 hour">
@@ -201,7 +212,7 @@
         </form>
              
         <hr>
-        <h2>Video Recording</h2>
+        <h2 id="video">Video Recording</h2>
         <video controls width="250">
 
             <source src="IMG_3762.MOV"
@@ -230,16 +241,16 @@
                     <strong>move forward on to the next dungeon challenging</strong> based on the current
                     equipment and statisics we have.
                 </p>
-                <p>Also, we discussed about other <em>potential difficulties</em> that may be
+                <p class="class1 class2">Also, we discussed about other <em>potential difficulties</em> that may be
                     concerned when we are fighting against the final boss of the dungeon.
                     There will be a detailed analysis coming in next week's meeting.
                 </p>
                 <h3>Distribution of Team roles</h3>
                 
-                <i>Vincent Cheng</i> - <b>Summoner(DPS)</b>
-                <i>Stephan Lei</i> - <b>Warrior(DPS)</b>
-                <i>Zhe Liang</i> - <b>White Mage(Healer)</b>
-                <i>Jiawen Xu</i> - <b>Paladin(Tank)</b>
+                <i>Vincent Cheng</i><b>Summoner(DPS)</b>
+                <i>Stephan Lei</i><b>Warrior(DPS)</b>
+                <i>Zhe Liang</i><b>White Mage(Healer)</b>
+                <i>Jiawen Xu</i><b>Paladin(Tank)</b>
             </details>
         </footer>   
     </body>
